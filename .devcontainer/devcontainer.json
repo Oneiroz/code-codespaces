@@ -5,5 +5,20 @@
     "image": "mcr.microsoft.com/vscode/devcontainers/universal:latest",
   
     "remoteUser": "codespace",
-    "overrideCommand": false
+    "overrideCommand": false,
+
+    // Add the IDs of extenstions to be installed when container is created.
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "GitHub.copilot"
+        ]
+      },
+      "codespaces": {
+        "openFiles": [
+          "codespace.md"
+        ]
+      }
+    }
+    
   }
